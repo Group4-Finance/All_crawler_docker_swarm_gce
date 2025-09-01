@@ -11,4 +11,4 @@ docker stack deploy --with-registry-auth -c rabbitmq-swarm.yml rabbitmq
 docker stack deploy --with-registry-auth -c docker-compose-redash.yml redash
 
 ## 啟動 api 
-docker stack deploy --with-registry-auth -c docker-compose-api-swarm.yml api
+DOCKER_IMAGE_FULL=qweasdkimo123/api:0.0.3 docker stack deploy --with-registry-auth -c docker-compose-api-swarm.yml api
