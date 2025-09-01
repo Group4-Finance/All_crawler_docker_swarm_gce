@@ -15,6 +15,7 @@ DOCKER_IMAGE_FULL=qweasdkimo123/api:0.0.3 docker stack deploy --with-registry-au
 
 ## ssl憑證
 !!申請憑證前要先購買或找到免費的網域
+
 sudo certbot certonly --standalone -d <yourdomain.com> -d <www.yourdomain.com>
 或
 sudo certbot --nginx -d <yourdomain.com>
