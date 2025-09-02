@@ -25,6 +25,7 @@ sudo certbot --nginx -d <yourdomain.com>
 將這兩個檔案複製到啟動api服務的遠端機器上，並事先在遠端機器上先建立資料夾以存放這兩個檔案
 
 scp /<privkey所在資料夾>/privkey.pem <user>@<remote_server>:/certs/
+
 scp /<fullchain所在資料夾>/fullchain.pem <user>@<remote_server>:/certs/
 
 user → 遠端機器的使用者名稱
