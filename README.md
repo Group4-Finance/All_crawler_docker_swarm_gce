@@ -28,6 +28,7 @@ scp /<privkey所在資料夾>/privkey.pem <user>@<remote_server>:/certs/
 scp /<fullchain所在資料夾>/fullchain.pem <user>@<remote_server>:/certs/
 
 user → 遠端機器的使用者名稱
+
 remote_server → 遠端 IP 
 
 最後只要在原本啟動的api command最後加入以下指令即可完成ssl憑證以啟動htttps
