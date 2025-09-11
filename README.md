@@ -48,11 +48,11 @@ user name → 遠端機器的使用者名稱
 remote_server → 遠端 IP 
 
 ### 確認certs內有無key
-進入certs根目錄
+### 進入certs根目錄
 
 cd /certs
 
-查看目錄內檔案
+### 查看目錄內檔案
 ls
 
 最後只要在原本啟動的api command最後加入以下指令即可完成ssl憑證以啟動htttps
