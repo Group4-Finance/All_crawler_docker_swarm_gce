@@ -10,7 +10,7 @@ services:
     ports: 
       - 8888:8888
     volumes:
-    - /home/delight/docker_swarm_gce/certs:/certs:ro
+    - /certs:/certs:ro
     deploy:
       mode: replicated
       replicas: 1
