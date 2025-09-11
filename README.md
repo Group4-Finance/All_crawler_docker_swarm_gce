@@ -29,7 +29,7 @@ sudo certbot --nginx -d <yourdomain.com>
 
 將這兩個檔案複製到啟動api服務的遠端機器上，並事先在遠端機器上先建立資料夾以存放這兩個檔案
 
-###在建立根目錄
+### 在建立根目錄
 sudo mkdir /certs
 
 ### 賦予權限
