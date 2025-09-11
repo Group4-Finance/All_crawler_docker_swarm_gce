@@ -28,14 +28,32 @@ sudo certbot --nginx -d <yourdomain.com>
 申請完憑證會得到四個檔案，只需要 privkey.pem 和 fullchain.pem 即可
 
 將這兩個檔案複製到啟動api服務的遠端機器上，並事先在遠端機器上先建立資料夾以存放這兩個檔案
-### 複製檔案到雲端機器
-scp /<privkey所在資料夾>/privkey.pem \<user name>\@<remote_server>:/certs/
 
-scp /<fullchain所在資料夾>/fullchain.pem \<user name>\@<remote_server>:/certs/
+###在建立根目錄
+sudo mkdir /certs
+
+### 賦予權限
+sudo chown kung:kung /certs
+
+### 檢查是否有根目錄存在以及權限
+ls -ld /certs
+
+### 複製檔案到雲端機器
+scp /mnt/c<privkey所在資料夾>/privkey.pem \<user name>\@<remote_server>:/certs/
+
+scp /mnt/c<fullchain所在資料夾>/fullchain.pem \<user name>\@<remote_server>:/certs/
 
 user name → 遠端機器的使用者名稱
 
 remote_server → 遠端 IP 
+
+### 確認certs內有無key
+進入certs根目錄
+
+cd /certs
+
+查看目錄內檔案
+ls
 
 最後只要在原本啟動的api command最後加入以下指令即可完成ssl憑證以啟動htttps
 
