@@ -43,9 +43,9 @@ scp /mnt/c/<privkey所在資料夾>/privkey.pem \<user name>\@<remote_server>:/c
 
 scp /mnt/c/<fullchain所在資料夾>/fullchain.pem \<user name>\@<remote_server>:/certs/
 
-user name → 遠端機器的使用者名稱
+\<user name>\ → 遠端機器的使用者名稱
 
-remote_server → 遠端 IP 
+\<remote_server>\ → 遠端 IP 
 
 ### 確認certs內有無key
 ### 進入certs根目錄
