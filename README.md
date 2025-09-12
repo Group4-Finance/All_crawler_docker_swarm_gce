@@ -33,7 +33,7 @@ sudo certbot --nginx -d <yourdomain.com>
 sudo mkdir /certs
 
 ### 賦予權限
-sudo chown \<user name>\:\<user name>\ /certs
+sudo chown \<user name>\:\<user name> /certs
 
 ### 檢查是否有根目錄存在以及權限
 ls -ld /certs
