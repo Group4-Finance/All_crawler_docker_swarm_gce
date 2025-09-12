@@ -55,6 +55,7 @@ cd /certs
 #### 查看目錄內檔案
 ls
 
+### 新增ssl command
 最後只要在原本啟動的api command最後加入以下指令即可完成ssl憑證以啟動htttps
 
 --ssl-keyfile /<privkey所在資料夾>/privkey.pem --ssl-certfile /<fullchain所在資料夾>/fullchain.pem
