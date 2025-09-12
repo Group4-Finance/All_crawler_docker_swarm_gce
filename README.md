@@ -39,9 +39,9 @@ sudo chown \<user name>\:\<user name> /certs
 ls -ld /certs
 
 ### 複製檔案到雲端機器
-scp /mnt/c<privkey所在資料夾>/privkey.pem \<user name>\@<remote_server>:/certs/
+scp /mnt/c/<privkey所在資料夾>/privkey.pem \<user name>\@<remote_server>:/certs/
 
-scp /mnt/c<fullchain所在資料夾>/fullchain.pem \<user name>\@<remote_server>:/certs/
+scp /mnt/c/<fullchain所在資料夾>/fullchain.pem \<user name>\@<remote_server>:/certs/
 
 user name → 遠端機器的使用者名稱
 
